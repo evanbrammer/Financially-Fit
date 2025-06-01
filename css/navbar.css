@@ -1,0 +1,162 @@
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+body, .navbar {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sections of navbar */
+.nav-center {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.nav-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 10px;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Dropdown setup */
+.dropdown {
+    position: relative;
+    margin: 0 10px;
+}
+
+.dropdown-toggle {
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    min-width: 160px;
+    z-index: 1001;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f4fdf7;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+body {
+    margin-top: 60px;
+}
+
+.navbar-user {
+    background-color: #f4fdf7;
+}
+
+
+
+
+
+/* Parent container */
+.nav-user {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    /*padding-right: 25px;*/
+    }
+
+.navbar-user .nav-user {
+    padding-right: 25px;
+    }
+    
+    /* For admin navbar */
+.navbar-admin .nav-user {
+    padding-right: 40px; 
+    }
+/* The icon */
+.nav-user img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid #4CAF50;
+}
+
+/* The dropdown itself */
+.user-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* places it directly under the icon */
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    padding-top: 4px; /* closes gap between icon and menu */
+    z-index: 1001;
+}
+
+/* Dropdown links */
+.user-dropdown a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hover style */
+.user-dropdown a:hover {
+    background-color: #f4fdf7;
+}
+
+/* Show dropdown on hover */
+.nav-user:hover .user-dropdown,
+.user-dropdown:hover {
+    display: block;
+}

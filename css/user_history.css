@@ -1,0 +1,45 @@
+.history-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.month-button {
+    display: block;
+    width: 100%;
+    background-color: #f4fdf7;
+    color: #333;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.month-button:hover {
+    background-color: #e1f3eb;
+}
+
+.history-content {
+    display: none;
+    overflow: hidden;
+    border-left: 4px solid #4CAF50;
+    background-color: #fff;
+    padding: 12px 20px;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.history-table th, .history-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
