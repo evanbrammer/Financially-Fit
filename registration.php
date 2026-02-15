@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($username) || empty($email) || empty($password)) {
         $errors[] = "All fields are required.";
     } else {
-        // Hash the password   should i use md5 like we did  in php class? 
+        // Hash the password   
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
         // Insert into DB using PDO (following from php class)

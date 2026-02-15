@@ -1,3 +1,4 @@
+use it_project
 
 -- February 2025
 INSERT INTO budget_history (user_id, year, month, income, housing, car, groceries, retirement, spending_money, leftover)

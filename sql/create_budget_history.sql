@@ -1,3 +1,5 @@
+use it_project
+
 CREATE TABLE budget_history (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
